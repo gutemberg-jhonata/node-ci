@@ -10,6 +10,7 @@
     "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
     "@types/node": "^18.11.12",
     "@typescript-eslint/eslint-plugin": "^5.46.0",
     "@typescript-eslint/parser": "^5.46.0",
