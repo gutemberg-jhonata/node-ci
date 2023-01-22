@@ -16,6 +16,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache: "pnpm"
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
@@ -36,7 +37,7 @@ jobs:
         run: pnpm install
       - name: Release
         env:
-          DOCKER_USERNAME: ${{ vars.DOCKER_USERNAME }},
-          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+          DOCKER_USERNAME: ${{ vars.GITHUB_DOCKER_USERNAME }},
+          DOCKER_PASSWORD: ${{ secrets.GITHUB_DOCKER_PASSWORD }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
