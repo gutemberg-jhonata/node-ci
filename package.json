@@ -4,6 +4,8 @@
   "description": "Workflows for backend projects",
   "license": "MIT",
   "scripts": {
+    "start": "node dist/src",
+    "build": "rm -rf dist && tsc -p ./tsconfig-build.json",
     "test": "vitest",
     "test:coverage": "vitest run --coverage"
   },
