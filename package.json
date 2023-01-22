@@ -1,6 +1,6 @@
 {
   "name": "node-ci",
-  "version": "1.0.0",
+  "version": "1.3.2",
   "description": "Workflows for backend projects",
   "license": "MIT",
   "scripts": {
