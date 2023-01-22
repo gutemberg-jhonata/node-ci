@@ -23,6 +23,7 @@ jobs:
         shell: bash
         run: |
           echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+          
       - name: Setup pnpm cache
         uses: actions/cache@v3
         with:
@@ -49,7 +50,13 @@ jobs:
           plugins: | 
             [
               "@semantic-release/commit-analyzer", 
-              "@semantic-release/release-notes-generator", 
+              "@semantic-release/release-notes-generator",
+              [
+                "@semantic-release/npm", 
+                {
+                  "npmPublish": false
+                }
+              ],
               "@semantic-release/github",
               [
                 "@semantic-release/git",
