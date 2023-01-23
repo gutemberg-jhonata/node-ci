@@ -4,6 +4,7 @@ export class Math {
   }
 
   sub (num1: number, num2: number): number {
+    console.log('test');
     return num1 - num2;
   }
 }
