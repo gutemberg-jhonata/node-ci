@@ -1,4 +1,4 @@
-<h1 align="center">Node.js template</h1>
+<h1 align="center">Node.js CI</h1>
 
 ## 🧪 Technologies
 
@@ -8,15 +8,16 @@ This project was developed by using the following technologies:
 * Editorconfig
 * Eslint
 * Vitest 
+* Github Actions
 
 ## 🚀 How to use
 ```bash
-  git clone https://github.com/gutemberg-jhonata/node-template.git
-  cd node-template
+  git clone https://github.com/gutemberg-jhonata/node-ci.git
+  cd node-ci
 ```
 ## 💻 About
 
-A template for backend projects using typescript.
+A CI workflow example for backend projects using typescript.
 
 ## :memo: Licence
 
