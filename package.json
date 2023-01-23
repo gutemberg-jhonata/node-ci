@@ -5,6 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "node dist/src",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix",
     "build": "rm -rf dist && tsc -p ./tsconfig-build.json",
     "test": "vitest",
     "test:coverage": "vitest run --coverage"

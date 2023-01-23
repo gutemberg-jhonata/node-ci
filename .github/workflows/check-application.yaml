@@ -40,3 +40,9 @@ jobs:
 
       - name: Runs tests
         run: pnpm test:coverage
+
+      - name: Eslint check
+        run: pnpm lint:fix
+
+      - name: Commitisar check
+        uses: aevea/commitsar@0.20.1
