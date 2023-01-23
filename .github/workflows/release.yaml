@@ -42,7 +42,7 @@ jobs:
         run: pnpm install --frozen-lockfile
       
       - name: Release
-        uses: codfish/semantic-release-action@v2
+        uses: docker://ghcr.io/codfish/semantic-release-action:v2
         id: semantic
         with:
           branches: |
