@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
@@ -40,3 +42,9 @@ jobs:
 
       - name: Runs tests
         run: pnpm test:coverage
+
+      - name: Eslint check
+        run: pnpm lint:fix
+
+      - name: Commitisar check
+        uses: aevea/commitsar@v0.20.1
