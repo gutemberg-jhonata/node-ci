@@ -46,5 +46,5 @@ jobs:
       - name: Eslint check
         run: pnpm lint:fix
 
-      - name: Commitisar check
-        uses: aevea/commitsar@v0.20.1
+      - name: Commitsar check
+        uses: docker://aevea/commitsar
