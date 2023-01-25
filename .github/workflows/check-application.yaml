@@ -49,5 +49,3 @@ jobs:
 
       - name: Commitsar check
         uses: docker://aevea/commitsar
-variables:
-  GIT_STRATEGY: none
