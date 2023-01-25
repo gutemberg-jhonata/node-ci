@@ -9,7 +9,13 @@
     "lint:fix": "pnpm lint --fix",
     "build": "rm -rf dist && tsc -p ./tsconfig-build.json",
     "test": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "context:local": "sudo docker context use default",
+    "context:aws": "sudo docker context use aws",
+    "pull:server": "sudo docker compose pull server",
+    "compose": "sudo docker compose up -d",
+    "deploy:local": "pnpm pull:server && pnpm compose",
+    "deploy:aws": "pnpm pull:server && sudo docker compose -c aws up -d"
   },
   "devDependencies": {
     "@semantic-release/git": "^10.0.1",
