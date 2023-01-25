@@ -1,6 +1,6 @@
 [
   {
-    "name": "node-ci-server",
-    "imageUri": "docker.io/gutemberg80/node-ci:latest"
+    "name": "server",
+    "imageUri": "docker.io/gutemberg80/node-ci:latest@sha256:26a265c45b214de521e9ecf0b67331661d2bcf93491d6839094c3b0aedfd8798"
   }
 ]
