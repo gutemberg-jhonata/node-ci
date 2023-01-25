@@ -5,7 +5,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
   res.send({
-    hello: 'world world'
+    hello: 'World 2'
   });
 });
 
