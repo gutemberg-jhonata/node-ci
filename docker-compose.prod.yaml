@@ -1,5 +1,0 @@
-services:
-  server:
-    container_name: node-ci-server
-    image: gutemberg80/node-ci
-    restart: always

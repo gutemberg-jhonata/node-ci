@@ -2,4 +2,6 @@ services:
   server:
     container_name: node-ci-server
     image: gutemberg80/node-ci
+    ports:
+      - "8080:8080"
     restart: always
