@@ -86,4 +86,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/node-ci:${{ steps.semantic.outputs.release-version }}
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/node-ci:${{ steps.semantic.outputs.release-version }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/node-ci:latest
