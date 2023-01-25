@@ -2,7 +2,8 @@ name: Release
 on:
   push:
     branches:
-      - main
+      - 'release'
+      - 'release/**'
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -46,7 +47,7 @@ jobs:
         id: semantic
         with:
           branches: |
-            ["main"]
+            ["release","release/**"]
           plugins: | 
             [
               "@semantic-release/commit-analyzer", 
