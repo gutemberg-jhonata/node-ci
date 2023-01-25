@@ -1,0 +1,6 @@
+[
+  {
+    "name": "node-ci",
+    "imageUri": "docker.io/gutemberg80/node-ci:latest"
+  }
+]
